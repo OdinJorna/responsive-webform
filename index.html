@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Responsive webform</title>
+  <meta name="description" content="A form for FreeCodeCamp">
+  <meta name="author" content="Odin">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/stylesheet.css">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="one-half column" style="margin-top: 10%">
+        <h1 id="title">Responsive webform</h1>
+        <p id="description">Please enter your feedback in the form below</p>
+        <form id="survey-form">
+          <label id="name-label" for="name">Enter your name:</label> 
+          <input id="name" type="text" placeholder="Name" required>
+          <label id="email-label" for="email">Enter your email-adress:</label>
+          <input id="email" type="email" placeholder="email" required>
+          <label id="number-label" for="number">What is your age?</label> 
+          <input id="number" type="number" placeholder="age" min="18" max="100">
+          <label id="dropdown-label" for="dropdown">Which class did you take?</label>
+          <select id="dropdown">
+            <option value="sugarbeats">Sugarbeats</option>
+            <option value="lollipops">Lollipops</option>
+            <option value="cotton candies">Cotton Candies</option>
+            <option value="marshmellows">Marshmellows</option>
+          </select>
+          <br>
+          <p id="radio-label">Would you recommend a dancing course to your friends?</p>
+          <div class="radio-inputs"><input type="radio" id="radio-no" name="feedback-reccomend" value="no"><label for="radio-no"> No</label></div>
+          <div class="radio-inputs"><input type="radio" id="radio-maybe" name="feedback-reccomend" value="maybe"><label for="radio-maybe"> Maybe</label></div>
+          <div class="radio-inputs"><input type="radio" id="radio-Yes" name="feedback-reccomend" value="Yes"><label for="radio-no"> Yes</label></div>
+          <br>
+          <p id="checkbox-label">What would you like to learn more of in the next block?</p>
+          <div class="radio-inputs"><input type="checkbox" id="swingout" value="Swingouts"><label for="swingout">Swingouts</label></div>
+          <div class="radio-inputs"><input type="checkbox" id="musicality" value="musicality"><label for="musicality">Musicality</label></div>
+          <div class="radio-inputs"><input type="checkbox" id="solo jazz" value="solo jazz"><label for="solo jazz">Solo Jazz</label></div>
+          <div class="radio-inputs"><input type="checkbox" id="rhythm" value="rhythm"><label for="rhythm">Rhythm variations</label></div>
+          <div class="radio-inputs"><input type="checkbox" id="aerials" value="aerials"><label for="aerials">Aerials</label></div>
+          <br>
+          <label id="comments-label" for="comments">Do you have additional comments?</label>
+          <textarea id="comments" name="comments" placeholder="Write your additional comments here"></textarea>
+          <br>
+          <button id="submit">Press to submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

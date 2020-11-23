@@ -1,0 +1,11 @@
+#radio-label, #checkbox-label {
+    font-weight: 600;
+}
+
+.radio-inputs {
+    display: flex;
+    grid-column-gap: 10px;
+
+}
+
+
